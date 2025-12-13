@@ -49,9 +49,9 @@ public final class Settings {
 	/**
 	 * General client and server settings.
 	 */
-	public static final String SERVER_NAME = "Avalon";
-	public static final String FORMAL_SERVER_NAME = "Avalon";
-	public static final String HELP_CC_NAME = "Andreas";
+	public static final String SERVER_NAME = "Occult";
+	public static final String FORMAL_SERVER_NAME = "Occult";
+	public static final String HELP_CC_NAME = "Hevil";
 	public static final String LASTEST_UPDATE = "";
 	public static final String CACHE_PATH = System.getProperty("user.dir") + "/data/cache/";
 	public static final int RECEIVE_DATA_LIMIT = 7500;
@@ -174,7 +174,7 @@ public final class Settings {
 			13887, 13890, 13893, 13896, 13899, 13902, 13905, 14484, 19784, 11694, 13738, 13740, 13742, 13744, 15017,
 			15018, 15019, 15020, 15220, 23659, 6570 };
 
-	public static final String[] DEVELOPERS = { "fullspawn", "halfeco", "economy", "starter", "bank", "andreas", "manager", "diz", "bit_new22", "user1", "user2", "user3"};
+	public static final String[] DEVELOPERS = { "hevil", "halfeco"};
 
 	public static final String[] MODERATORS = {};
 

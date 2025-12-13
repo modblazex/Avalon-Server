@@ -135,6 +135,54 @@
     "lastSeen": "2025-09-07T20:51:06.942716200Z",
     "attempts": 1
   },
+  "1367": {
+    "npcId": 1367,
+    "npcName": "Skraeling",
+    "reason": "No Infobox Monster found",
+    "firstSeen": "2025-12-10T23:30:26.873897700Z",
+    "lastSeen": "2025-12-10T23:30:26.873897700Z",
+    "attempts": 1
+  },
+  "1368": {
+    "npcId": 1368,
+    "npcName": "Skraeling",
+    "reason": "No Infobox Monster found",
+    "firstSeen": "2025-12-10T23:30:26.707994700Z",
+    "lastSeen": "2025-12-10T23:30:26.707994700Z",
+    "attempts": 1
+  },
+  "1379": {
+    "npcId": 1379,
+    "npcName": "Ragnar",
+    "reason": "No Infobox Monster found",
+    "firstSeen": "2025-12-10T23:30:24.013571600Z",
+    "lastSeen": "2025-12-10T23:30:24.013571600Z",
+    "attempts": 1
+  },
+  "1387": {
+    "npcId": 1387,
+    "npcName": "Thora",
+    "reason": "No Infobox Monster found",
+    "firstSeen": "2025-12-10T23:30:25.380771Z",
+    "lastSeen": "2025-12-10T23:30:25.380771Z",
+    "attempts": 1
+  },
+  "1389": {
+    "npcId": 1389,
+    "npcName": "Skraeling",
+    "reason": "No Infobox Monster found",
+    "firstSeen": "2025-12-10T23:30:24.948025400Z",
+    "lastSeen": "2025-12-10T23:30:24.948025400Z",
+    "attempts": 1
+  },
+  "1391": {
+    "npcId": 1391,
+    "npcName": "Skraeling",
+    "reason": "No Infobox Monster found",
+    "firstSeen": "2025-12-10T23:30:25.110928Z",
+    "lastSeen": "2025-12-10T23:30:25.110928Z",
+    "attempts": 1
+  },
   "1463": {
     "npcId": 1463,
     "npcName": "Monkey",
@@ -261,6 +309,14 @@
     "reason": "No Infobox Monster found",
     "firstSeen": "2025-09-07T20:49:38.445724900Z",
     "lastSeen": "2025-09-07T20:49:38.445724900Z",
+    "attempts": 1
+  },
+  "2237": {
+    "npcId": 2237,
+    "npcName": "Gee",
+    "reason": "No Infobox Monster found",
+    "firstSeen": "2025-12-11T12:27:59.711205500Z",
+    "lastSeen": "2025-12-11T12:27:59.711205500Z",
     "attempts": 1
   },
   "2795": {

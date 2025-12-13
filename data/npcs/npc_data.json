@@ -3583,6 +3583,68 @@
       "mazchna"
     ]
   },
+  "104": {
+    "id": 104,
+    "name": "Ghost",
+    "members": false,
+    "combatLevel": 19,
+    "attackLevel": 13,
+    "strengthLevel": 13,
+    "defenceLevel": 18,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 25,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0
+    },
+    "magicDefence": {
+      "magic": 0
+    },
+    "rangedDefence": {
+      "light": 0,
+      "standard": 0,
+      "heavy": 0
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "aliases": [],
+    "size": "1",
+    "examine": "Eeek! A ghost!",
+    "attributes": [
+      "undead",
+      "spectral"
+    ],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 2
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 40,
+    "slayerXp": 25,
+    "categories": [],
+    "assignedBy": [
+      "turael",
+      "spria",
+      "mazchna"
+    ]
+  },
   "105": {
     "id": 105,
     "name": "Grizzly bear",
@@ -17367,6 +17429,571 @@
       "nieve",
       "duradel"
     ]
+  },
+  "1380": {
+    "id": 1380,
+    "name": "Einar",
+    "members": true,
+    "combatLevel": 1,
+    "attackLevel": 1,
+    "strengthLevel": 1,
+    "defenceLevel": 1,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 1,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0
+    },
+    "magicDefence": {
+      "magic": 0
+    },
+    "rangedDefence": {
+      "light": 0,
+      "standard": 0,
+      "heavy": 0
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "releaseDate": "[[29 November]] [[2004]]",
+    "aliases": [],
+    "size": "1",
+    "examine": "A subject of Miscellania.",
+    "attributes": [],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 1
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 50,
+    "slayerXp": 0,
+    "categories": [],
+    "assignedBy": []
+  },
+  "1381": {
+    "id": 1381,
+    "name": "Alrik",
+    "members": true,
+    "combatLevel": 1,
+    "attackLevel": 1,
+    "strengthLevel": 1,
+    "defenceLevel": 1,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 1,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0
+    },
+    "magicDefence": {
+      "magic": 0
+    },
+    "rangedDefence": {
+      "light": 0,
+      "standard": 0,
+      "heavy": 0
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "releaseDate": "[[29 November]] [[2004]]",
+    "aliases": [],
+    "size": "1",
+    "examine": "A subject of Miscellania.",
+    "attributes": [],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 1
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 50,
+    "slayerXp": 0,
+    "categories": [],
+    "assignedBy": []
+  },
+  "1386": {
+    "id": 1386,
+    "name": "Rannveig",
+    "members": true,
+    "combatLevel": 2,
+    "attackLevel": 3,
+    "strengthLevel": 3,
+    "defenceLevel": 3,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 1,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": -12,
+      "slash": -12,
+      "crush": -12
+    },
+    "magicDefence": {
+      "magic": -12
+    },
+    "rangedDefence": {
+      "light": -12,
+      "standard": -12,
+      "heavy": -12
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "releaseDate": "[[29 November]] [[2004]]",
+    "aliases": [],
+    "size": "1",
+    "examine": "A subject of Miscellania.",
+    "attributes": [],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 1
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 25,
+    "slayerXp": 0,
+    "categories": [],
+    "assignedBy": []
+  },
+  "1388": {
+    "id": 1388,
+    "name": "Valgerd",
+    "members": true,
+    "combatLevel": 2,
+    "attackLevel": 3,
+    "strengthLevel": 3,
+    "defenceLevel": 3,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 1,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": -12,
+      "slash": -12,
+      "crush": -12
+    },
+    "magicDefence": {
+      "magic": -12
+    },
+    "rangedDefence": {
+      "light": -12,
+      "standard": -12,
+      "heavy": -12
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "releaseDate": "[[29 November]] [[2004]]",
+    "aliases": [],
+    "size": "1",
+    "examine": "A subject of Miscellania.",
+    "attributes": [],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 1
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 25,
+    "slayerXp": 0,
+    "categories": [],
+    "assignedBy": []
+  },
+  "1390": {
+    "id": 1390,
+    "name": "Broddi",
+    "members": true,
+    "combatLevel": 2,
+    "attackLevel": 3,
+    "strengthLevel": 3,
+    "defenceLevel": 3,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 1,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": -12,
+      "slash": -12,
+      "crush": -12
+    },
+    "magicDefence": {
+      "magic": -12
+    },
+    "rangedDefence": {
+      "light": -12,
+      "standard": -12,
+      "heavy": -12
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "releaseDate": "[[29 November]] [[2004]]",
+    "aliases": [],
+    "size": "1",
+    "examine": "A subject of Miscellania.",
+    "attributes": [],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 1
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 25,
+    "slayerXp": 0,
+    "categories": [],
+    "assignedBy": []
+  },
+  "1392": {
+    "id": 1392,
+    "name": "Ragnvald",
+    "members": true,
+    "combatLevel": 2,
+    "attackLevel": 3,
+    "strengthLevel": 3,
+    "defenceLevel": 3,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 1,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": -12,
+      "slash": -12,
+      "crush": -12
+    },
+    "magicDefence": {
+      "magic": -12
+    },
+    "rangedDefence": {
+      "light": -12,
+      "standard": -12,
+      "heavy": -12
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "releaseDate": "[[29 November]] [[2004]]",
+    "aliases": [],
+    "size": "1",
+    "examine": "A subject of Miscellania.",
+    "attributes": [],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 1
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 25,
+    "slayerXp": 0,
+    "categories": [],
+    "assignedBy": []
+  },
+  "1401": {
+    "id": 1401,
+    "name": "Chicken",
+    "members": false,
+    "combatLevel": 1,
+    "attackLevel": 1,
+    "strengthLevel": 1,
+    "defenceLevel": 1,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 3,
+    "attackBonus": -47,
+    "strengthBonus": -42,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": -42,
+      "slash": -42,
+      "crush": -42
+    },
+    "magicDefence": {
+      "magic": -42
+    },
+    "rangedDefence": {
+      "light": -42,
+      "standard": -42,
+      "heavy": -42
+    },
+    "immunities": {
+      "poison": true,
+      "venom": true,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "aliases": [],
+    "size": "1",
+    "examine": "Yep. Definitely a chicken.",
+    "attributes": [],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 0
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Stab]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 25,
+    "slayerXp": 3,
+    "categories": [],
+    "assignedBy": [
+      "turael",
+      "spria"
+    ]
+  },
+  "1402": {
+    "id": 1402,
+    "name": "Chicken",
+    "members": false,
+    "combatLevel": 1,
+    "attackLevel": 1,
+    "strengthLevel": 1,
+    "defenceLevel": 1,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 3,
+    "attackBonus": -47,
+    "strengthBonus": -42,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": -42,
+      "slash": -42,
+      "crush": -42
+    },
+    "magicDefence": {
+      "magic": -42
+    },
+    "rangedDefence": {
+      "light": -42,
+      "standard": -42,
+      "heavy": -42
+    },
+    "immunities": {
+      "poison": true,
+      "venom": true,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "aliases": [],
+    "size": "1",
+    "examine": "Yep. Definitely a chicken.",
+    "attributes": [],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 0
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Stab]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 25,
+    "slayerXp": 3,
+    "categories": [],
+    "assignedBy": [
+      "turael",
+      "spria"
+    ]
+  },
+  "1403": {
+    "id": 1403,
+    "name": "Rooster",
+    "members": true,
+    "combatLevel": 2,
+    "attackLevel": 1,
+    "strengthLevel": 1,
+    "defenceLevel": 1,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 5,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": -42,
+      "slash": -42,
+      "crush": -42
+    },
+    "magicDefence": {
+      "magic": -42
+    },
+    "rangedDefence": {
+      "light": -42,
+      "standard": -42,
+      "heavy": -42
+    },
+    "immunities": {
+      "poison": true,
+      "venom": true,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "aliases": [],
+    "size": "1",
+    "examine": "He rules the, er, roost.",
+    "attributes": [],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 0
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Stab]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 25,
+    "slayerXp": 5,
+    "categories": [],
+    "assignedBy": [
+      "turael",
+      "spria"
+    ]
+  },
+  "1404": {
+    "id": 1404,
+    "name": "Rabbit",
+    "members": true,
+    "combatLevel": 2,
+    "attackLevel": 1,
+    "strengthLevel": 1,
+    "defenceLevel": 1,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 5,
+    "attackBonus": -47,
+    "strengthBonus": -42,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 0,
+      "slash": -42,
+      "crush": -42
+    },
+    "magicDefence": {
+      "magic": -42
+    },
+    "rangedDefence": {
+      "light": -42,
+      "standard": -42,
+      "heavy": -42
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "aliases": [],
+    "size": "1",
+    "examine": "Aww, how cute.",
+    "attributes": [],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 1
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 25,
+    "slayerXp": 0,
+    "categories": [],
+    "assignedBy": []
   },
   "1441": {
     "id": 1441,
@@ -33206,6 +33833,69 @@
       "spria"
     ]
   },
+  "3291": {
+    "id": 3291,
+    "name": "Skeleton",
+    "members": false,
+    "combatLevel": 22,
+    "attackLevel": 15,
+    "strengthLevel": 18,
+    "defenceLevel": 17,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 29,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 5,
+      "slash": 5,
+      "crush": -5
+    },
+    "magicDefence": {
+      "magic": 0
+    },
+    "rangedDefence": {
+      "light": 5,
+      "standard": 5,
+      "heavy": 5
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "releaseDate": "[[4 January]] [[2001]]",
+    "aliases": [],
+    "size": "1",
+    "examine": "Could do with gaining a few pounds.",
+    "attributes": [
+      "undead"
+    ],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 3
+    },
+    "aggressive": true,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 70,
+    "slayerXp": 29,
+    "categories": [],
+    "assignedBy": [
+      "turael",
+      "spria",
+      "krystilia",
+      "mazchna"
+    ]
+  },
   "3348": {
     "id": 3348,
     "name": "White Knight",
@@ -42156,6 +42846,62 @@
       "spria"
     ]
   },
+  "4998": {
+    "id": 4998,
+    "name": "Guard",
+    "members": false,
+    "combatLevel": 22,
+    "attackLevel": 15,
+    "strengthLevel": 15,
+    "defenceLevel": 16,
+    "magicLevel": 1,
+    "rangedLevel": 26,
+    "constitutionLevel": 22,
+    "attackBonus": 6,
+    "strengthBonus": 10,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 18,
+      "slash": 25,
+      "crush": 19
+    },
+    "magicDefence": {
+      "magic": -4
+    },
+    "rangedDefence": {
+      "light": 20,
+      "standard": 20,
+      "heavy": 20
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "releaseDate": "[[9 November]] [[2022]]",
+    "aliases": [],
+    "size": "1",
+    "examine": "He tries to keep order around here.",
+    "attributes": [],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 4
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Stab]]"
+    ],
+    "attackSpeedTicks": 6,
+    "respawnTicks": 50,
+    "slayerXp": 0,
+    "categories": [],
+    "assignedBy": []
+  },
   "5080": {
     "id": 5080,
     "name": "Carnivorous chinchompa",
@@ -44271,6 +45017,254 @@
   },
   "5348": {
     "id": 5348,
+    "name": "Ghost",
+    "members": false,
+    "combatLevel": 19,
+    "attackLevel": 13,
+    "strengthLevel": 13,
+    "defenceLevel": 18,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 25,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0
+    },
+    "magicDefence": {
+      "magic": 0
+    },
+    "rangedDefence": {
+      "light": 0,
+      "standard": 0,
+      "heavy": 0
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "aliases": [],
+    "size": "1",
+    "examine": "Eeek! A ghost!",
+    "attributes": [
+      "undead",
+      "spectral"
+    ],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 2
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 40,
+    "slayerXp": 25,
+    "categories": [],
+    "assignedBy": [
+      "turael",
+      "spria",
+      "mazchna"
+    ]
+  },
+  "5349": {
+    "id": 5349,
+    "name": "Ghost",
+    "members": false,
+    "combatLevel": 19,
+    "attackLevel": 13,
+    "strengthLevel": 13,
+    "defenceLevel": 18,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 25,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0
+    },
+    "magicDefence": {
+      "magic": 0
+    },
+    "rangedDefence": {
+      "light": 0,
+      "standard": 0,
+      "heavy": 0
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "aliases": [],
+    "size": "1",
+    "examine": "Eeek! A ghost!",
+    "attributes": [
+      "undead",
+      "spectral"
+    ],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 2
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 40,
+    "slayerXp": 25,
+    "categories": [],
+    "assignedBy": [
+      "turael",
+      "spria",
+      "mazchna"
+    ]
+  },
+  "5350": {
+    "id": 5350,
+    "name": "Ghost",
+    "members": false,
+    "combatLevel": 19,
+    "attackLevel": 13,
+    "strengthLevel": 13,
+    "defenceLevel": 18,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 25,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0
+    },
+    "magicDefence": {
+      "magic": 0
+    },
+    "rangedDefence": {
+      "light": 0,
+      "standard": 0,
+      "heavy": 0
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "aliases": [],
+    "size": "1",
+    "examine": "Eeek! A ghost!",
+    "attributes": [
+      "undead",
+      "spectral"
+    ],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 2
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 40,
+    "slayerXp": 25,
+    "categories": [],
+    "assignedBy": [
+      "turael",
+      "spria",
+      "mazchna"
+    ]
+  },
+  "5351": {
+    "id": 5351,
+    "name": "Ghost",
+    "members": false,
+    "combatLevel": 19,
+    "attackLevel": 13,
+    "strengthLevel": 13,
+    "defenceLevel": 18,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 25,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0
+    },
+    "magicDefence": {
+      "magic": 0
+    },
+    "rangedDefence": {
+      "light": 0,
+      "standard": 0,
+      "heavy": 0
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "aliases": [],
+    "size": "1",
+    "examine": "Eeek! A ghost!",
+    "attributes": [
+      "undead",
+      "spectral"
+    ],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 2
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 40,
+    "slayerXp": 25,
+    "categories": [],
+    "assignedBy": [
+      "turael",
+      "spria",
+      "mazchna"
+    ]
+  },
+  "5352": {
+    "id": 5352,
     "name": "Ghost",
     "members": false,
     "combatLevel": 19,
@@ -46540,6 +47534,61 @@
       "spria",
       "mazchna"
     ]
+  },
+  "5829": {
+    "id": 5829,
+    "name": "Rabbit",
+    "members": true,
+    "combatLevel": 2,
+    "attackLevel": 1,
+    "strengthLevel": 1,
+    "defenceLevel": 1,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 5,
+    "attackBonus": -47,
+    "strengthBonus": -42,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 0,
+      "slash": -42,
+      "crush": -42
+    },
+    "magicDefence": {
+      "magic": -42
+    },
+    "rangedDefence": {
+      "light": -42,
+      "standard": -42,
+      "heavy": -42
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "aliases": [],
+    "size": "1",
+    "examine": "Aww, how cute.",
+    "attributes": [],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 1
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Crush]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 25,
+    "slayerXp": 0,
+    "categories": [],
+    "assignedBy": []
   },
   "5842": {
     "id": 5842,
@@ -56787,6 +57836,69 @@
       "duradel"
     ]
   },
+  "7786": {
+    "id": 7786,
+    "name": "Mighty banshee",
+    "members": true,
+    "combatLevel": 89,
+    "attackLevel": 75,
+    "strengthLevel": 85,
+    "defenceLevel": 50,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 100,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 15,
+      "slash": 15,
+      "crush": 15
+    },
+    "magicDefence": {
+      "magic": 0
+    },
+    "rangedDefence": {
+      "light": 15,
+      "standard": 15,
+      "heavy": 15
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "releaseDate": "[[9 June]] [[2016]]",
+    "aliases": [],
+    "size": "2",
+    "examine": "A tortured screaming soul.",
+    "attributes": [
+      "undead",
+      "spectral"
+    ],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 9
+    },
+    "aggressive": true,
+    "attackStyles": [
+      "[[Magical melee]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 15,
+    "slayerXp": 100,
+    "categories": [],
+    "assignedBy": [
+      "turael",
+      "spria",
+      "mazchna"
+    ]
+  },
   "7873": {
     "id": 7873,
     "name": "Man",
@@ -58690,6 +59802,127 @@
       "chaeldar",
       "nieve",
       "kuradal"
+    ]
+  },
+  "8598": {
+    "id": 8598,
+    "name": "Pyrefiend",
+    "members": true,
+    "combatLevel": 43,
+    "attackLevel": 52,
+    "strengthLevel": 30,
+    "defenceLevel": 22,
+    "magicLevel": 1,
+    "rangedLevel": 1,
+    "constitutionLevel": 45,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 10,
+      "slash": 10,
+      "crush": 10
+    },
+    "magicDefence": {
+      "magic": 0
+    },
+    "rangedDefence": {
+      "light": 10,
+      "standard": 10,
+      "heavy": 10
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "aliases": [],
+    "size": "1",
+    "examine": "A small fire demon.",
+    "attributes": [
+      "fiery",
+      "demon"
+    ],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 4
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Magical melee]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 15,
+    "slayerXp": 45,
+    "categories": [],
+    "assignedBy": [
+      "mazchna",
+      "vannaka"
+    ]
+  },
+  "8599": {
+    "id": 8599,
+    "name": "Jelly",
+    "members": true,
+    "combatLevel": 78,
+    "attackLevel": 45,
+    "strengthLevel": 45,
+    "defenceLevel": 120,
+    "magicLevel": 45,
+    "rangedLevel": 1,
+    "constitutionLevel": 75,
+    "attackBonus": 0,
+    "strengthBonus": 0,
+    "magicBonus": 0,
+    "magicStrengthBonus": 0,
+    "rangedBonus": 0,
+    "rangedStrengthBonus": 0,
+    "meleeDefence": {
+      "stab": 0,
+      "slash": 0,
+      "crush": 0
+    },
+    "magicDefence": {
+      "magic": 0
+    },
+    "rangedDefence": {
+      "light": 0,
+      "standard": 0,
+      "heavy": 0
+    },
+    "immunities": {
+      "poison": false,
+      "venom": false,
+      "cannons": false,
+      "thralls": false,
+      "burn": false
+    },
+    "releaseDate": "[[26 January]] [[2005]]",
+    "aliases": [],
+    "size": "1",
+    "attributes": [],
+    "xpBonus": 0.0,
+    "maxHit": {
+      "maxhit": 5
+    },
+    "aggressive": false,
+    "attackStyles": [
+      "[[Magical melee]]"
+    ],
+    "attackSpeedTicks": 4,
+    "respawnTicks": 15,
+    "slayerXp": 75,
+    "categories": [],
+    "assignedBy": [
+      "krystilia",
+      "vannaka",
+      "chaeldar",
+      "konar"
     ]
   },
   "8637": {
