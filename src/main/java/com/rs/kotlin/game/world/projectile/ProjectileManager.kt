@@ -160,7 +160,7 @@ object ProjectileManager {
                     defender.gfx(hitGraphic.id, hitGraphic.height, rotation)
                     onLanded?.invoke()
                 }
-            }, delayTicks)
+            }, delayTicks + 1)
         } else {
             onLanded?.invoke()
         }

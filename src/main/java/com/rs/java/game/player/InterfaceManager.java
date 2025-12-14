@@ -41,6 +41,19 @@ public class InterfaceManager {
 				interfaceId);
 	}
 
+	public void sendTab(String tab, int interfaceId) {
+		int tabId = Rscm.lookup(tab);
+		player.getPackets().sendInterface(true, isResizableScreen() ? RESIZABLE_WINDOW_ID : FIXED_WINDOW_ID, tabId,
+				interfaceId);
+	}
+
+	public void sendTab(String tab, String inter) {
+		int tabId = Rscm.lookup(tab);
+		int interfaceId = Rscm.lookup(inter);
+		player.getPackets().sendInterface(true, isResizableScreen() ? RESIZABLE_WINDOW_ID : FIXED_WINDOW_ID, tabId,
+				interfaceId);
+	}
+
 	public void sendChatBoxInterface(int interfaceId) {
 		player.getPackets().sendInterface(true, 752, CHAT_BOX_TAB, interfaceId);
 	}
@@ -49,14 +62,6 @@ public class InterfaceManager {
 		player.getPackets().closeInterface(CHAT_BOX_TAB);
 	}
 
-	public void sendHealth() {
-		player.getInterfaceManager().sendOverlay(3001, false);
-	}
-	
-	public void setDefaultRootInterface() {
-		setRootInterface(resizableScreen ? 746 : 548);
-	}
-	
 	public void closeHealth(boolean fullScreen) {
 		player.getInterfaceManager().closeOverlay(false);
 	}
@@ -67,31 +72,36 @@ public class InterfaceManager {
 	}
 
 	public void sendOverlay(int interfaceId, boolean fullScreen) {
-		sendTab(isResizableScreen() ? fullScreen ? 1 : 11 : 0, interfaceId);
+		sendTab(isResizableScreen() ? "tab.overlay_resizeable" : "tab.overlay", interfaceId);
 	}
 
 	public void closeOverlay(boolean fullScreen) {
-		player.getPackets().closeInterface(isResizableScreen() ? fullScreen ? 1 : 11 : 0);
+		player.getPackets().closeInterface(isResizableScreen() ? "tab.overlay_resizeable" : "tab.overlay");
 	}
 	
 	public void closeTab(boolean fullScreen, int tab) {
-		player.getPackets().closeInterface(isResizableScreen() ? fullScreen ? 1 : 11 : tab);
+		player.getPackets().closeInterface(tab);
 	}
 	
 	public void closeTab(int tab) {
 		player.getPackets().closeInterface(tab);
 	}
 
+	public void closeTab(String tab) {
+		int tabId = Rscm.lookup(tab);
+		player.getPackets().closeInterface(tabId);
+	}
+
 	public void sendQuestTab() {
-		sendTab(isResizableScreen() ? 114 : 174, 3002);
+		sendTab(isResizableScreen() ? "tab.quest_resizeable" : "tab.quest", "interface.custom_quest");
 	}
 
 	public void sendSummoningTab() {
-		sendTab(resizableScreen ? 119 : 179, 662);
+		sendTab(resizableScreen ? "tab.summoning_resizeable" : "tab.summoning", "interface.summoning_tab");
 	}
 	
 	public void sendDungTab() {
-		sendTab(isResizableScreen() ? 114 : 174, 939);
+		sendTab(isResizableScreen() ? "tab.dungeoneering_resizeable" : "tab.dungeoneering", "interface.dungeoneering_party");
 	}
 
 	public void sendInterface(int interfaceId) {
@@ -161,16 +171,16 @@ public class InterfaceManager {
 
 	public void sendFullScreenInterfaces() {
 		player.getPackets().sendWindowsPane(746, 0);
-		sendTab(21, 752);
-		sendTab(22, 751);
+		sendTab("tab.chat_resizeable", "interface.chat");
+		sendTab("tab.chat_options_resizeable", "interface.chat_options");
 		sendTab(15, 745);
 		sendTab(25, 754);
-		sendTab(195, 748);
-		sendTab(196, 749);
-		sendTab(197, 750);
-		sendTab(198, 747);
-		player.getPackets().sendInterface(true, 752, 9, 137);
-		sendTab(119, 662);
+		sendTab("tab.hp_orb_resizeable", "interface.hp_orb");
+		sendTab("tab.prayer_orb_resizeable", "interface.prayer_orb");
+		sendTab("tab.run_orb_resizeable", "interface.run_orb");
+		sendTab("tab.summoning_orb_resizeable", "interface.summoning_orb");
+		player.getPackets().sendInterface(true, 752, 9, Rscm.lookup("interface.chatbox"));
+		sendTab("tab.summoning_resizeable", "interface.summoning_tab");
 		player.getPackets().sendGlobalVar(823, 1);
 		sendCombatStyles();
 		sendTaskSystem();
@@ -180,42 +190,42 @@ public class InterfaceManager {
 		sendEquipment();
 		sendPrayerBook();
 		sendMagicBook();
-		sendTab(120, 550); // friend list
-		sendTab(121, 1109); // 551 ignore now friendchat
-		sendTab(122, 1110); // 589 old clan chat now new clan chat
+		sendTab("tab.friendslist_resizeable", "interface.friendslist"); // friend list
+		sendTab("tab.friendschat_resizeable", "interface.friendschat"); // 551 ignore now friendchat
+		sendTab("tab.clanchat_resizeable", "interface.clanchat"); // 589 old clan chat now new clan chat
 		sendSettings();
 		sendEmotes();
-		sendTab(125, 187); // music
-		sendTab(126, 34); // notes
-		sendTab(129, 182); // logout*/
+		sendTab("tab.music_resizeable", "interface.music"); // music
+		sendTab("tab.notes_resizeable", "interface.notes"); // notes
+		sendTab("tab.logout_resizeable", "interface.logout"); // logout*/
 	}
 
 	public void sendFixedInterfaces() {
 		player.getPackets().sendWindowsPane(548, 0);
-		sendTab(161, 752);
-		sendTab(37, 751);
-		sendTab(23, 745);
-		sendTab(25, 754);
-		sendTab(155, 747);
-		sendTab(151, 748);
-		sendTab(152, 749);
-		sendTab(153, 750);
+		sendTab("tab.chat", "interface.chat");
+		sendTab("tab.chat_options", "interface.chat_options");
+		sendTab(23, 745);//unknown
+		sendTab(25, 754);//unknown
+		sendTab("tab.summoning_orb", "interface.summoning_orb");
+		sendTab("tab.hp_orb", "interface.hp_orb");
+		sendTab("tab.prayer_orb", "interface.prayer_orb");
+		sendTab("tab.run_orb", "interface.run_orb");
 		player.getPackets().sendInterface(true, 752, 9, 137);
 		player.getPackets().sendInterface(true, 548, 9, 167);
 		//sendTab(player.getInterfaceManager().hasRezizableScreen() ? 11 : 0, 1252);
-		//sendTab(119, 1139);
+		//sendTab(119, "interface.sof");
 		sendMagicBook();
 		sendPrayerBook();
 		sendEquipment();
 		sendInventory();
 		sendQuestTab();
 		sendSummoningTab();
-		sendTab(181, 1109);// 551 ignore now friendchat
-		sendTab(182, 1110);// 589 old clan chat now new clan chat
-		sendTab(180, 550);// friend list
-		sendTab(185, 187);// music
-		sendTab(186, 34); // notes
-		sendTab(189, 182);
+		sendTab("tab.frienschat", "interface.friendschat");
+		sendTab("tab.clanchat", "interface.clanchat");
+		sendTab("tab.friendslist", "interface.friendslist");
+		sendTab("tab.music", "interface.music");
+		sendTab("tab.notes", "interface.notes");
+		sendTab("tab.logout", "interface.logout");
 		sendSkills();
 		sendEmotes();
 		sendSettings();
@@ -242,27 +252,27 @@ public class InterfaceManager {
 	}
 
 	public void sendXPPopup() {
-		sendTab(isResizableScreen() ? 38 : 10, 1213); // xp
+		sendTab(isResizableScreen() ? "tab.xp_drop_resizeable" : "tab.xp_drop", "interface.xp_drop"); // xp
 	}
 
 	public void sendXPDisplay() {
-		sendXPDisplay(1215); // xp counter
+		sendXPDisplay(Rscm.lookup("interface.xp_counter")); // xp counter
 	}
 
 	public void sendXPDisplay(int interfaceId) {
-		sendTab(isResizableScreen() ? 27 : 29, interfaceId); // xp counter
+		sendTab(isResizableScreen() ? "tab.xp_counter_resizeable" : "tab.xp_counter", interfaceId); // xp counter
 	}
 
 	public void closeXPPopup() {
-		player.getPackets().closeInterface(isResizableScreen() ? 38 : 10);
+		player.getPackets().closeInterface(isResizableScreen() ? "tab.xp_drop_resizeable" : "tab.xp_drop");
 	}
 
 	public void closeXPDisplay() {
-		player.getPackets().closeInterface(isResizableScreen() ? 27 : 29);
+		player.getPackets().closeInterface(isResizableScreen() ? "tab.xp_counter_resizeable" : "tab.xp_counter");
 	}
 
 	public void sendEquipment() {
-		sendTab(isResizableScreen() ? 116 : 176, 387);
+		sendTab(isResizableScreen() ? "tab.equipment_resizeable" : "tab.equipment", "interface.equipment");
 	}
 
 	public void closeInterface(int one, int two) {
@@ -270,80 +280,82 @@ public class InterfaceManager {
 	}
 
 	public void closeEquipment() {
-		player.getPackets().closeInterface(isResizableScreen() ? 116 : 176);
+		player.getPackets().closeInterface(isResizableScreen() ? "tab.equipment_resizeable" : "tab.equipment");
 	}
 
 	public void sendInventory() {
-		sendTab(isResizableScreen() ? 115 : 175, Inventory.INVENTORY_INTERFACE);
+		sendTab(isResizableScreen() ? "tab.inventory_resizeable" : "tab.inventory", Inventory.INVENTORY_INTERFACE);
 	}
 
 	public void closeInventory() {
-		player.getPackets().closeInterface(isResizableScreen() ? 115 : 175);
+		player.getPackets().closeInterface(isResizableScreen() ? "tab.inventory_resizeable" : "tab.inventory");
 	}
 
 	public void closeSkills() {
-		player.getPackets().closeInterface(isResizableScreen() ? 113 : 206);
+		player.getPackets().closeInterface(isResizableScreen() ? "tab.skills_resizeable" : "tab.skills");
 	}
 
 	public void closeCombatStyles() {
-		player.getPackets().closeInterface(isResizableScreen() ? 111 : 204);
+		player.getPackets().closeInterface(isResizableScreen() ? "tab.combatstyles_resizeable" : "tab.combatstyles");
 	}
 
 	public void closeTaskSystem() {
-		player.getPackets().closeInterface(isResizableScreen() ? 112 : 205);
+		player.getPackets().closeInterface(isResizableScreen() ? "tab.achievements_resizeable" : "tab.achievements");
 	}
 
 	public void sendCombatStyles() {
-		sendTab(isResizableScreen() ? 111 : 171, 884);
+		sendTab(isResizableScreen() ? "tab.combatstyles_resizeable" : "tab.combatstyles", "interface.combat_interface");
 	}
 
 	public void sendTaskSystem() {
-		sendTab(resizableScreen ? 112 : 172, 3002);
+		sendTab(resizableScreen ? "tab.achievements_resizeable" : "tab.achievements", "interface.custom_quest");
 	}
 
 	public void sendSkills() {
-		sendTab(isResizableScreen() ? 113 : 173, 320);
+		sendTab(isResizableScreen() ? "tab.skills_resizeable" : "tab.skills", "interface.skills");
 	}
 
 	public void sendSettings() {
-		sendSettings(261);
+		sendSettings(Rscm.lookup("interface.settings"));
 	}
 
 	public void sendSettings(int interfaceId) {
-		sendTab(isResizableScreen() ? 123 : 183, interfaceId);
+		sendTab(isResizableScreen() ? "tab.settings_resizeable" : "tab.settings", interfaceId);
 	}
 
 	public void sendPrayerBook() {
-		sendTab(isResizableScreen() ? 117 : 177, 271);
+		String tab = isResizableScreen() ? "tab.prayerbook_resizeable" : "tab.prayerbook";
+		sendTab(tab, "interface.prayerbook");
 	}
 
 	public void closePrayerBook() {
-		player.getPackets().closeInterface(isResizableScreen() ? 117 : 210);
+		int tabId = isResizableScreen() ? Rscm.lookup("tab.prayerbook_resizeable") : Rscm.lookup("tab.prayerbook");
+		player.getPackets().closeInterface(tabId);
 	}
 
 	public void sendMagicBook() {
-		sendTab(isResizableScreen() ? 118 : 178, player.getCombatDefinitions().getSpellBook());
+		sendTab(isResizableScreen() ? Rscm.lookup("tab.spellbook_resizeable") : Rscm.lookup("tab.spellbook"), player.getCombatDefinitions().getSpellBook());
 		switch (player.getCombatDefinitions().getSpellBook()) {
 		case 430:
-			player.getPackets().sendHideIComponent(430, 24, true);
-			player.getPackets().sendHideIComponent(430, 68, true);
-			player.getPackets().sendHideIComponent(430, 70, true);
-			player.getPackets().sendHideIComponent(430, 71, true);
-			player.getPackets().sendHideIComponent(430, 77, true);
+			player.getPackets().sendHideIComponent("interface.lunar_spellbook", 24, true);
+			player.getPackets().sendHideIComponent("interface.lunar_spellbook", 68, true);
+			player.getPackets().sendHideIComponent("interface.lunar_spellbook", 70, true);
+			player.getPackets().sendHideIComponent("interface.lunar_spellbook", 71, true);
+			player.getPackets().sendHideIComponent("interface.lunar_spellbook", 77, true);
 			break;
 		}
 	}
 
 	public void closeMagicBook() {
-		player.getPackets().closeInterface(isResizableScreen() ? 118 : 211);
+		player.getPackets().closeInterface(isResizableScreen() ? Rscm.lookup("tab.spellbook_resizeable") : Rscm.lookup("tab.spellbook"));
 	}
 
 	public void sendEmotes() {
-		sendTab(isResizableScreen() ? 124 : 184, 590);
+		sendTab(isResizableScreen() ? "tab.emotes_resizeable" : "tab.emotes", "interface.emotes");
 	}
 
 	public void closeEmotes() {
-		player.getPackets().closeInterface(isResizableScreen() ? 124 : 217);
+		player.getPackets().closeInterface(isResizableScreen() ? Rscm.lookup("tab.emotes_resizeable") : Rscm.lookup("tab.emotes"));
 	}
 
 	public boolean addInterface(int windowId, int tabId, int childId) {
@@ -367,6 +379,16 @@ public class InterfaceManager {
 		return openedinterfaces.get(tabId)[1];
 	}
 
+	public boolean containsInterface(String inter) {
+		int childId = Rscm.lookup(inter);
+		if (childId == windowsPane)
+			return true;
+		for (int[] value : openedinterfaces.values())
+			if (value[0] == childId)
+				return true;
+		return false;
+	}
+
 	public boolean containsInterface(int childId) {
 		if (childId == windowsPane)
 			return true;
@@ -377,6 +399,11 @@ public class InterfaceManager {
 	}
 
 	public boolean containsTab(int tabId) {
+		return openedinterfaces.containsKey(tabId);
+	}
+
+	public boolean containsTab(String tab) {
+		int tabId = Rscm.lookup(tab);
 		return openedinterfaces.containsKey(tabId);
 	}
 

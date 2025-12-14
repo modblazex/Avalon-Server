@@ -8,6 +8,7 @@ import com.rs.java.game.player.Player
 import com.rs.java.game.player.TickManager
 import com.rs.java.game.player.controlers.WildernessControler
 import com.rs.java.utils.HexColours
+import com.rs.kotlin.Rscm
 import com.rs.kotlin.game.world.util.Msg
 import java.util.*
 import kotlin.math.abs
@@ -252,7 +253,7 @@ object PvpManager {
             if (safeForSelf && !hasGrace(player) && isRawSafe(player) ) SPRITE_SAFE else SPRITE_DANGER
         )
 
-        showKDRInter(player)
+        //showKDRInter(player)
     }
 
 
@@ -261,13 +262,13 @@ object PvpManager {
             val kills = player.killCount
             val deaths = player.deathCount
             val ratioText = if (deaths == 0) kills.toString() else String.format("%.2f", kills.toDouble() / deaths)
-            if (!player.interfaceManager.containsInterface(3040)) player.interfaceManager.sendTab(31, 3040)
-            player.packets.sendTextOnComponent(3040, 2, "Kills: $kills")
-            player.packets.sendTextOnComponent(3040, 3, "Deaths: $deaths")
-            player.packets.sendTextOnComponent(3040, 4, "Ratio: $ratioText")
+            if (!player.interfaceManager.containsInterface("interface.kdr_interface")) player.interfaceManager.sendTab("tab.kdr_tab", "interface.kdr_interface")
+            player.packets.sendTextOnComponent("interface.kdr_interface", 2, "Kills: $kills")
+            player.packets.sendTextOnComponent("interface.kdr_interface", 3, "Deaths: $deaths")
+            player.packets.sendTextOnComponent("interface.kdr_interface", 4, "Ratio: $ratioText")
         } else {
-            if (player.interfaceManager.containsInterface(3040)) {
-                player.interfaceManager.closeTab(31)
+            if (player.interfaceManager.containsInterface("interface.kdr_interface")) {
+                player.interfaceManager.closeTab("tab.kdr_tab")
             }
         }
     }
@@ -285,13 +286,13 @@ object PvpManager {
     }
 
     private fun ensureInterfaceOpen(player: Player) {
-        val tabId = if (player.interfaceManager.isResizableScreen) 42 else 11
+        val tabId = if (player.interfaceManager.isResizableScreen) Rscm.lookup("tab.pvp_tab_resizeable") else Rscm.lookup("tab.pvp_tab")
         if (!player.interfaceManager.containsInterface(INTERFACE_ID))
             player.interfaceManager.sendTab(tabId, INTERFACE_ID)
     }
 
     private fun closeInterface(player: Player) {
-        val tabId = if (player.interfaceManager.isResizableScreen) 42 else 11
+        val tabId = if (player.interfaceManager.isResizableScreen) Rscm.lookup("tab.pvp_tab_resizeable") else Rscm.lookup("tab.pvp_tab")
         player.interfaceManager.closeTab(tabId)
     }
 

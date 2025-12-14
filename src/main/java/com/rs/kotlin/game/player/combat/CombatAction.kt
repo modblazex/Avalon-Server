@@ -339,8 +339,10 @@ class CombatAction(
     override fun stop(player: Player, interrupted: Boolean) {
         stopFollowTask(player)
         //player.resetWalkSteps();
-        player.setNextFaceEntity(null);
-        style.onStop(interrupted)
+        player.setNextFaceEntity(null)
+        if (::style.isInitialized) {
+            style.onStop(interrupted)
+        }
     }
 
     override fun getPriority(): ActionPriority {

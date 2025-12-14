@@ -115,9 +115,9 @@ public final class Settings {
 	// 0);
 	public static final long MAX_PACKETS_DECODER_PING_DELAY = 30000;
 	public static final double DUNGEONEERING_EXP_RATE = 1;
-	public static final int COMBAT_XP_RATE = 1;
-	public static int SKILLING_XP_RATE = 1;
-	public static final int SUMMONING_XP_RATE = 1;
+	public static final int COMBAT_XP_RATE = 10;
+	public static int SKILLING_XP_RATE = 10;
+	public static final int SUMMONING_XP_RATE = 10;
 	public static final int DROP_RATE = 1;
 	public static double BONUS_EXP_WEEK_MULTIPLIER = 1.0;
 	public static double BONUS_POINTS_WEEK_MULTIPLIER = 1.0;

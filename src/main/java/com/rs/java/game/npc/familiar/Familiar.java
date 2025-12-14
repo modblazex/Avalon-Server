@@ -269,7 +269,7 @@ public abstract class Familiar extends NPC implements Serializable {
 
 	public void sendFollowerDetails() {
 		boolean res = owner.getInterfaceManager().hasRezizableScreen();
-		owner.getInterfaceManager().sendTab(167, 662);
+		owner.getInterfaceManager().sendTab("tab.summoning_tab", "interface.summoning_tab");
 		owner.getPackets().sendGlobalVar(168, 98);
 		owner.getPackets().sendHideIComponent(662, 44, true);
 		owner.getPackets().sendHideIComponent(662, 45, true);
@@ -298,7 +298,7 @@ public abstract class Familiar extends NPC implements Serializable {
 
 	public static void selectLeftOption(Player player) {
 		boolean res = player.getInterfaceManager().hasRezizableScreen();
-		player.getInterfaceManager().sendTab(167, 880);//send interface on tab
+		player.getInterfaceManager().sendTab("tab.summoning_tab", "interface.summoning_options");//send interface on tab
 		player.getPackets().sendGlobalVar(168, 98);//navigate to hidden tab
 		sendLeftClickOption(player);
 	}

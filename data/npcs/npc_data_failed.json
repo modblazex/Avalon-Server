@@ -375,6 +375,14 @@
     "lastSeen": "2025-09-08T14:35:33.998713200Z",
     "attempts": 1
   },
+  "5103": {
+    "npcId": 5103,
+    "npcName": "Sabre-toothed kyatt",
+    "reason": "No Infobox Monster found",
+    "firstSeen": "2025-12-14T13:28:45.733888400Z",
+    "lastSeen": "2025-12-14T13:28:45.733888400Z",
+    "attempts": 1
+  },
   "5104": {
     "npcId": 5104,
     "npcName": "Spined larupia",

@@ -17,6 +17,7 @@ import com.rs.java.game.npc.NPC;
 import com.rs.java.utils.HexColours;
 import com.rs.java.utils.Logger;
 import com.rs.java.utils.Utils;
+import com.rs.kotlin.Rscm;
 import kotlin.Pair;
 
 public final class Skills implements Serializable {
@@ -1103,7 +1104,9 @@ public final class Skills implements Serializable {
             exp *= 1;
         } else {
             if ((skill >= Skills.ATTACK && skill <= Skills.RANGE) || skill == Skills.MAGIC) {
-                if (player.getTemporaryTarget() != null && player.inPkingArea()
+                if (player.getTemporaryTarget() instanceof NPC npc && (npc.getId() == Rscm.lookup("npc.melee_dummy") || npc.getId() == Rscm.lookup("npc.magic_dummy"))) {
+                    exp *= 1;
+                } else if (player.getTemporaryTarget() != null && player.inPkingArea()
                         && !(player.getTemporaryTarget() instanceof NPC))
                     exp *= 1;
                 else if (player.getTemporaryTarget() != null && player.inPkingArea()

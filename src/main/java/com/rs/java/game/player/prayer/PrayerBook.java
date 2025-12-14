@@ -993,6 +993,7 @@ public class PrayerBook implements Serializable {
 
         Arrays.fill(quickNormalPrayers, false);
         Arrays.fill(quickAncientPrayers, false);
+        resetLeechBonuses();
         refresh();
 
         player.message("You have switched to " + (isAncientCurses() ? "Ancient Curses" : "Normal Prayers") + ".");

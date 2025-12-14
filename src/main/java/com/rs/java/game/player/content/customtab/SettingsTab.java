@@ -148,8 +148,8 @@ public class SettingsTab extends CustomTab {
             @Override
             public void usage(Player p) {
                 p.toggles.put("KDRINTER", !p.toggles("KDRINTER", false));
-                if (p.getInterfaceManager().containsTab(10) && !p.toggles("KDRINTER", false)) {
-                    p.getInterfaceManager().closeTab(p.getInterfaceManager().isResizableScreen(), 10);
+                if (p.getInterfaceManager().containsTab(31) && !p.toggles("KDRINTER", false)) {
+                    p.getInterfaceManager().closeTab(p.getInterfaceManager().isResizableScreen(), 31);
                 } else {
                     if (WildernessControler.isAtWild(p) || EdgevillePvPControler.isAtBank(p) || EdgevillePvPControler.isAtPvP(p)) {
                         WildernessControler.showKDRInter(p);

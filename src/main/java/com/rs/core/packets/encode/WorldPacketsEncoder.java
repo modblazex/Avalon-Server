@@ -1217,6 +1217,12 @@ public class WorldPacketsEncoder extends Encoder {
 		player.getInterfaceManager().removeTab(windowComponentId);
 	}
 
+	public void closeInterface(String tab) {
+		int windowComponentId = Rscm.lookup(tab);
+		closeInterface(player.getInterfaceManager().getTabWindow(windowComponentId), windowComponentId);
+		player.getInterfaceManager().removeTab(windowComponentId);
+	}
+
 	public void closeInterface(int windowId, int windowComponentId) {
 		OutputStream stream = new OutputStream(5);
 		stream.writePacket(player, 5);
