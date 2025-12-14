@@ -537,8 +537,8 @@ public class GrandExchangeManager implements Serializable {
 			if (GrandExchange.getPrice(id) == 0) {
 				player.getPackets().sendTextOnComponent(105, 143,
 						ItemExamines.getExamine(item) + "<br> <br>You can't sell free items to the grand exchange.");
-			} else if (GrandExchange.getPrice(id) < Settings.LOWPRICE_LIMIT
-					&& !LimitedGEReader.itemIsLimited(item.getId()) || UnlimitedGEReader.itemIsLimited(id)) {
+			} else if ((GrandExchange.getPrice(id) < Settings.LOWPRICE_LIMIT
+					&& !LimitedGEReader.itemIsLimited(item.getId())) || UnlimitedGEReader.itemIsUnlimited(item.getId())) {
 				player.getPackets().sendTextOnComponent(105, 143, ItemExamines.getExamine(item)
 						+ "<br> <br>The Grand Exchange will automatically buy this<br>item for 5% less than its guide price.");
 			} else {
@@ -562,8 +562,8 @@ public class GrandExchangeManager implements Serializable {
 			if (GrandExchange.getPrice(id) == 0) {
 				player.getPackets().sendTextOnComponent(105, 143, "" + ItemExamines.getExamine(new Item(id))
 						+ "<br><br>Quantity: Unlimited!<br>" + "Price: Free!");
-			} else if (GrandExchange.getPrice(id) < Settings.LOWPRICE_LIMIT && !LimitedGEReader.itemIsLimited(id)
-					|| UnlimitedGEReader.itemIsLimited(id)) {
+			} else if ((GrandExchange.getPrice(id) < Settings.LOWPRICE_LIMIT && !LimitedGEReader.itemIsLimited(id))
+					|| UnlimitedGEReader.itemIsUnlimited(id)) {
 				player.getPackets().sendTextOnComponent(105, 143, "" + ItemExamines.getExamine(new Item(id))
 						+ "<br><br>Quantity: Unlimited!<br>" + "Price: " + GrandExchange.getPrice(id) + ".");
 			} else {

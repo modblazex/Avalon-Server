@@ -318,9 +318,9 @@ public class GrandExchange {
 			player.getGeManager().getOfferUIds()[slot] = createOffer(offer);
 			offer.link(slot, player);
 			if (!offer.isBuying()) {
-				if (Settings.ECONOMY_MODE == 0) {// full eco
-					if ((GrandExchange.getPrice(offer.getId()) < Settings.LOWPRICE_LIMIT
-							|| UnlimitedGEReader.itemIsLimited(offer.getId()))
+				if (Settings.ECONOMY_MODE == 0 || Settings.ECONOMY_MODE == 1) {// full eco
+					if ((GrandExchange.getPrice(offer.getId()) < Settings.LOWPRICE_LIMIT && !LimitedGEReader.itemIsLimited(offer.getId())
+							|| UnlimitedGEReader.itemIsUnlimited(offer.getId()))
 							&& (offer.getPrice() <= Math.floor(GrandExchange.getPrice(offer.getId()) * 0.95))) {
 						offer.sellOffer(offer);
 					} else {
@@ -330,9 +330,9 @@ public class GrandExchange {
 					findBuyerSeller(offer);
 				}
 			} else {
-				if (Settings.ECONOMY_MODE == 0) {// full eco
-					if ((GrandExchange.getPrice(offer.getId()) < Settings.LOWPRICE_LIMIT
-							|| UnlimitedGEReader.itemIsLimited(offer.getId()))
+				if (Settings.ECONOMY_MODE == 0 || Settings.ECONOMY_MODE == 1) {// full eco
+					if ((GrandExchange.getPrice(offer.getId()) < Settings.LOWPRICE_LIMIT && !LimitedGEReader.itemIsLimited(offer.getId())
+							|| UnlimitedGEReader.itemIsUnlimited(offer.getId()))
 							&& offer.getPrice() >= GrandExchange.getPrice(offer.getId())) {
 						offer.buyOffer(offer);
 					} else {
@@ -357,7 +357,7 @@ public class GrandExchange {
 			edited = true;
 			if (offer.cancel() && offer.forceRemove())
 				deleteOffer(player, slot);
-			if (!UnlimitedGEReader.itemIsLimited(offer.getId()) && EconomyPrices.getPrice(offer.getId()) >= Settings.LOWPRICE_LIMIT) {
+			if (!UnlimitedGEReader.itemIsUnlimited(offer.getId()) && EconomyPrices.getPrice(offer.getId()) >= Settings.LOWPRICE_LIMIT) {
 				//if (!offer.isBuying() && Settings.discordEnabled)
 					//Launcher.getDiscordBot().getChannelByName("exchange").sendMessage(offer.getOwner().getDisplayName()
 				//	+ " aborted selling " + offer.getDefinitions().getName() + "!");
@@ -401,7 +401,7 @@ public class GrandExchange {
 					bestOffer = o;
 			}
 			if (bestOffer == null) {
-				if (!UnlimitedGEReader.itemIsLimited(offer.getId()) && EconomyPrices.getPrice(offer.getId()) >= Settings.LOWPRICE_LIMIT) {
+				if (!UnlimitedGEReader.itemIsUnlimited(offer.getId()) && EconomyPrices.getPrice(offer.getId()) >= Settings.LOWPRICE_LIMIT) {
 					//DatabaseUtility.sendTask(offer, new sendGEOffer(), false);
 					//if (Settings.discordEnabled)
 					//Launcher.getDiscordBot().getChannelByName("exchange")

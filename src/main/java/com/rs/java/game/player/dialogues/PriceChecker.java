@@ -18,7 +18,7 @@ public class PriceChecker extends Dialogue {
 		int sellamount = GrandExchange.getSellQuantity(itemId);
 		int buyprice = GrandExchange.getBestBuyPrice(itemId);
 		int buyamount = GrandExchange.getBuyQuantity(itemId);
-		if (GrandExchange.getPrice(itemId) >= 250000 && !UnlimitedGEReader.itemIsLimited(itemId)
+		if (GrandExchange.getPrice(itemId) >= 250000 && !UnlimitedGEReader.itemIsUnlimited(itemId)
 				|| LimitedGEReader.itemIsLimited(itemId))
 			sendEntityDialogue(SEND_ITEM_DIALOGUE,
 					new String[] { ItemDefinitions.getItemDefinitions(itemId).name,

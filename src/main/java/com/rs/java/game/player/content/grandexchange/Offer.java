@@ -240,7 +240,7 @@ public class Offer extends Item {
 		fromOffer.totalAmmountSoFar += exchangeAmt;
 		totalPriceSoFar += totalPrice;
 		fromOffer.totalPriceSoFar += totalPrice;
-		if (Settings.discordEnabled && !UnlimitedGEReader.itemIsLimited(fromOffer.getId())
+		if (Settings.discordEnabled && !UnlimitedGEReader.itemIsUnlimited(fromOffer.getId())
 				&& EconomyPrices.getPrice(fromOffer.getId()) >= Settings.LOWPRICE_LIMIT) {
 			Player fromOwner = fromOffer.getOwner();
 			if (fromOwner == null)

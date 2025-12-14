@@ -63,7 +63,7 @@ public class UnlimitedGEReader {
 
 	}
 
-	public static boolean itemIsLimited(int itemId) {
+	public static boolean itemIsUnlimited(int itemId) {
 		for (int i = 0; i < items.size(); i++) {
 			if (itemId == items.get(i)) {
 				return true;

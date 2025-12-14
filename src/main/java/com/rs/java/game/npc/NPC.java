@@ -1324,6 +1324,7 @@ public class NPC extends Entity implements Serializable {
     public int getAttackSpeed() {
         return combatData.attackSpeedTicks;
     }
+
     public int getMaxHit() {
         if (definition != null) {
             return definition.getMaxHit();

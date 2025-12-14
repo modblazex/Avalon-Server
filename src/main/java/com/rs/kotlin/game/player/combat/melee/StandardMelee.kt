@@ -539,6 +539,7 @@ object StandardMelee : MeleeData() {
                 "item.beginner_wand",
                 "item.apprentice_wand",
                 "item.master_wand",
+                "item.kodai_wand",
                 "item.iban_s_staff",
                 "item.slayer_s_staff",
                 "item.guthix_staff",
