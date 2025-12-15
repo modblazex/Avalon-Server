@@ -61,8 +61,8 @@ class TimerOverlay {
         return created
     }
 
-    private fun getTimerOverlayTab(player: Player): Int {//used: 0, 30, 31, 44
-        return if (player.interfaceManager.isResizableScreen) 0 else 29 //27 shows but dissapears when moved
+    private fun getTimerOverlayTab(player: Player): Int {
+        return if (player.interfaceManager.isResizableScreen) Rscm.lookup("tab.timer_tab_resizeable") else Rscm.lookup("tab.timer_tab")
     }
 
     fun startTimer(

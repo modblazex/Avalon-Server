@@ -149,5 +149,6 @@ xp_counter=1215
 quest_tab=3002
 wilderness_skull=381
 custom_quest=3002
+health_interface=3037
 kdr_interface=3040
 pvp_interface=3043

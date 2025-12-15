@@ -7,6 +7,7 @@ import com.rs.java.game.npc.NPC
 import com.rs.java.game.player.Player
 import com.rs.java.game.player.Skills
 import com.rs.java.game.player.TickManager
+import com.rs.kotlin.Rscm
 import com.rs.kotlin.game.player.combat.CombatAction
 import com.rs.kotlin.game.player.combat.Weapon
 import com.rs.kotlin.game.player.combat.special.CombatContext
@@ -77,7 +78,7 @@ class HealthOverlay {
     }
 
     fun getHealthOverlayId(player: Player): Int {
-        return if (player.interfaceManager.isResizableScreen) 1 else 30
+        return if (player.interfaceManager.isResizableScreen) Rscm.lookup("tab.health_overlay_resizeable") else Rscm.lookup("tab.health_overlay")
     }
 
     fun updateHealthOverlay(player: Player, target: Entity, updateScript: Boolean) {

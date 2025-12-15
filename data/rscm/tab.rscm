@@ -54,15 +54,31 @@ dungeoneering_resizeable=114
 
 overlay=0
 overlay_resizeable=11
-kdr_tab=31
-kdr_tab_resizeable=?
-wildy_skull_tab=0
-wildy_skull_resizeable=11
+wildy_skull_tab=8
+wildy_skull_resizeable=8
 xp_drop=10
 xp_drop_resizeable=38
-xp_counter=29
+xp_counter=11
 xp_counter_resizeable=27
-pvp_tab=25
+pvp_tab=31
 pvp_tab_resizeable=42
+fading_overlay=27
+fading_overlay_resizeable=12
+kdr_tab=27
+kdr_tab_resizeable=27
+health_overlay=29
+health_overlay_resizeable=10
+timer_tab=30
+timer_tab_resizeable=65
+validTabsFixed=[0,8,10,11,20,23,25,26,27,40(notsure if timers)(28 could work for timers)
+0=fade screen
+8=wildy
+10=xpdrop
+11=xpcounter
+25=pvp
+27=kdr
+29=health
+30=timers
+
 
 

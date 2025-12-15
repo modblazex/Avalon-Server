@@ -1791,18 +1791,16 @@ public final class Commands {
                     player.getPackets().sendItems(95, p211.getBank().getContainerCopy());
                     player.getBank().openPlayerBank(p211);
                     return true;
-                case "testtab"://163 is 99
-                    //
-                    player.getInterfaceManager().sendTab(167, 662);
-                    player.getPackets().sendGlobalVar(168, 98);
+                case "testtab":
+                    int tabId = Integer.parseInt(cmd[1]);
+                    player.getInterfaceManager().sendTab(tabId, 381);
+                    return true;
+                case "closeoverlays":
+                    for (int i = 0; i < 35; i++)
+                    player.getInterfaceManager().closeTab(i);
                         return true;
                 case "tab":
-                    int loops = Integer.parseInt(cmd[2]);
-                    for (int startId = Integer.parseInt(cmd[1]); startId < loops; startId++) {
-                        player.getInterfaceManager().sendTab(startId, 662);
-                        player.getPackets().sendGlobalVar(168, 99);
-                    }
-                    player.message("sending summoning tab");
+                    player.getInterfaceManager().sendTab(Integer.parseInt(cmd[1]), Integer.parseInt(cmd[2]));
                     return true;
                 case "healother":
                     if (cmd.length == 2 || cmd.length == 3) {

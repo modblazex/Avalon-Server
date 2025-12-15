@@ -13,6 +13,7 @@ import com.rs.java.game.player.content.Pots;
 import com.rs.core.tasks.WorldTask;
 import com.rs.core.tasks.WorldTasksManager;
 import com.rs.java.utils.Utils;
+import com.rs.kotlin.Rscm;
 import com.rs.kotlin.game.world.area.Area;
 import com.rs.kotlin.game.world.area.AreaManager;
 
@@ -370,11 +371,7 @@ public class WildernessControler extends Controler {
 	}
 
 	public void removeIcon() {
-			if (player.toggles("KDRINTER", false)) {
-				if (player.getInterfaceManager().containsTab(10))
-					player.getInterfaceManager().closeTab(player.getInterfaceManager().hasRezizableScreen(), 10);
-			}
-			player.getPackets().closeInterface(player.getInterfaceManager().hasRezizableScreen() ? 11 : 0);
+			player.getPackets().closeInterface(player.getInterfaceManager().hasRezizableScreen() ? Rscm.lookup("tab.wildy_skull_resizeable") : Rscm.lookup("tab.wildy_skull_tab"));
 			player.getAppearence().generateAppearenceData();
 			player.getEquipment().refresh(null);
 			player.getPackets().sendGlobalVar(1000, 0);

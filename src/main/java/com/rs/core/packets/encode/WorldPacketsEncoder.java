@@ -1208,10 +1208,6 @@ public class WorldPacketsEncoder extends Encoder {
 		session.write(stream);
 	}
 
-	public void sendDelayedGraphics(Graphics graphics, int delay, WorldTile tile) {
-
-	}
-
 	public void closeInterface(int windowComponentId) {
 		closeInterface(player.getInterfaceManager().getTabWindow(windowComponentId), windowComponentId);
 		player.getInterfaceManager().removeTab(windowComponentId);
@@ -1231,10 +1227,7 @@ public class WorldPacketsEncoder extends Encoder {
 	}
 
 	public void sendInterface(boolean nocliped, int windowId, int windowComponentId, int interfaceId) {
-		// currently fixes the inter engine.. not ready for same component
-		// ids(tabs), different inters
-		if (!(windowId == 752 && (windowComponentId == 9 || windowComponentId == 12))) { // if
-																							// chatbox
+		if (!(windowId == 752 && (windowComponentId == 9 || windowComponentId == 12))) {
 			if (player.getInterfaceManager().containsInterface(windowComponentId, interfaceId))
 				closeInterface(windowComponentId);
 			if (!player.getInterfaceManager().addInterface(windowId, windowComponentId, interfaceId)) {

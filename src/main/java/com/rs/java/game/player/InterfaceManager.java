@@ -447,14 +447,14 @@ public class InterfaceManager {
 		if (hasRezizableScreen())
 			player.getPackets().sendInterface(true, RESIZABLE_WINDOW_ID, 12, backgroundInterface);
 		else
-			player.getPackets().sendInterface(true, FIXED_WINDOW_ID, 11, backgroundInterface);
+			player.getPackets().sendInterface(true, FIXED_WINDOW_ID, 0, backgroundInterface);
 	}
 
 	public void closeFadingInterface() {
 		if (hasRezizableScreen())
 			player.getPackets().closeInterface(12);
 		else
-			player.getPackets().closeInterface(11);
+			player.getPackets().closeInterface(0);
 	}
 
 	public void sendScreenInterface(int backgroundInterface, int interfaceId) {

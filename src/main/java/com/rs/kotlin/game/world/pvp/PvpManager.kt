@@ -253,7 +253,7 @@ object PvpManager {
             if (safeForSelf && !hasGrace(player) && isRawSafe(player) ) SPRITE_SAFE else SPRITE_DANGER
         )
 
-        //showKDRInter(player)
+        showKDRInter(player)
     }
 
 
